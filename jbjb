@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio Site Submission</title>
+  <style>
+    :root {
+      --main-color: #4CAF50;
+      --background: #fff;
+      --text-color: #333;
+      --font: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      font-family: var(--font);
+      background-color: var(--background);
+      color: var(--text-color);
+      margin: 0;
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    h1, h2 {
+      color: var(--main-color);
+    }
+
+    img {
+      max-width: 100%;
+      margin: 10px 0;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    code, pre {
+      background: #f4f4f4;
+      padding: 10px;
+      display: block;
+      overflow-x: auto;
+      border-radius: 6px;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    button {
+      margin: 10px 0;
+      padding: 8px 16px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .dark-mode {
+      background-color: #121212;
+      color: #fff;
+    }
+
+    @media screen and (max-width: 768px) {
+      body {
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>📌 Portfolio Website Submission</h1>
+
+  <h2>1. Project Description</h2>
+  <p>
+    This is a personal portfolio website built with HTML, CSS, and JavaScript. It presents my background,
+    showcases selected projects, and includes an interactive contact form. The project began with a responsive template, 
+    but I significantly customized it to meet accessibility and design standards, add new functionality, and showcase my CSS and JS skills.
+  </p>
+
+  <h2>2. Site Link</h2>
+  <p><a href="https://your-site-url.com" target="_blank">https://your-site-url.com</a></p>
+
+  <h2>3. W3 Validator Compliance</h2>
+  <p>This site has been tested with the W3C Markup Validation Service and contains no major HTML errors.</p>
+  <img src="screenshots/w3c-valid.png" alt="W3C Validator Screenshot" />
+
+  <h2>4. Responsive Design</h2>
+  <p>Responsive design is implemented using media queries and flexible grid layouts.</p>
+  <img src="screenshots/mobile-view.png" alt="Mobile View Screenshot" />
+  <img src="screenshots/tablet-view.png" alt="Tablet View Screenshot" />
+  <img src="screenshots/desktop-view.png" alt="Desktop View Screenshot" />
+
+  <h2>5. CSS Styling Highlights</h2>
+  <p>The website is styled using custom CSS. Key styling elements are shown below:</p>
+  <pre><code>
+:root {
+  --main-color: #4CAF50;
+  --font: 'Segoe UI', sans-serif;
+}
+
+body {
+  font-family: var(--font);
+  background-color: #fff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+a:hover {
+  color: var(--main-color);
+}
+  </code></pre>
+
+  <h2>6. Changes Made to Template</h2>
+  <ul>
+    <li>Refactored layout to use semantic HTML5 structure (`section`, `article`, `nav`).</li>
+    <li>Improved accessibility (added `aria-label`, keyboard navigation, contrast ratios).</li>
+    <li>Removed unused scripts and CSS for performance.</li>
+    <li>Added responsive navbar with toggler for mobile.</li>
+  </ul>
+
+  <h2>7. Extras</h2>
+  <ol>
+    <li><strong>Dark Mode Toggle</strong> – A button toggles between light and dark mode using JS and CSS variables.</li>
+    <li><strong>Scroll Animation</strong> – Sections fade in as they enter the viewport using IntersectionObserver.</li>
+    <li><strong>Modal Gallery Viewer</strong> – Projects can be viewed in a pop-up modal with details and images.</li>
+    <li><strong>Form Validation</strong> – JavaScript validation for email and required fields with error messages.</li>
+  </ol>
+
+  <h2>8. Extra Example – Dark Mode Toggle</h2>
+  <button id="toggleDark">Toggle Dark Mode</button>
+  <script>
+    document.getElementById('toggleDark').addEventListener('click', function () {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
+
+</body>
+</html>
